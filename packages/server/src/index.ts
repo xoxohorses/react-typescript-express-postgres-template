@@ -1,9 +1,10 @@
-const express = require("express");
+import express from "express";
+
 const app = express();
-const port = 3001; // use a different port from your React app
+const port = 3001;
 
 app.get("/", (req, res) => {
-  res.send("Hello from Express!");
+  res.send("Express server working!");
 });
 
 app.listen(port, () => {
