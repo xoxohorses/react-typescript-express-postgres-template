@@ -7,8 +7,11 @@
     /* Language and Environment */
     "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     "lib": [
+      "DOM",
+      "DOM.Iterable",
       "ESNext"
     ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    "jsx": "react",
 
     /* Modules */
     "module": "ESNext" /* Specify what module code is generated. */,
@@ -35,5 +38,8 @@
 
     /* Completeness */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "ts-node": { "esm": true }
 }

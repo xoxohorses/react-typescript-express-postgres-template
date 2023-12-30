@@ -1,5 +1,10 @@
 import React from "react";
 
-const App = () => <h1>Hello world!</h1>;
+import { sharedFunction } from "../../shared/src/utils";
+
+const App = () => {
+  sharedFunction();
+  return <h1>Hello world!</h1>;
+};
 
 export default App;

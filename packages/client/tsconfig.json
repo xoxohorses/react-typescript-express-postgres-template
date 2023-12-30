@@ -1,8 +1,0 @@
-{
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable"],
-    "jsx": "react"
-  },
-  "exclude": ["node_modules"]
-}
