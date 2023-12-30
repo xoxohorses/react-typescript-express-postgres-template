@@ -9,10 +9,11 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint 'packages/**/*.tsx'",
-    "format": "prettier --write 'packages/**/*.tsx'"
+    "lint": "eslint 'packages/**/*.ts' 'packages/**/*.tsx'",
+    "format": "prettier --write 'packages/**/*.ts' 'packages/**/*.tsx'"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
