@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "lint": "eslint 'packages/**/*.tsx'",
-    "format": "prettier --write 'packages/**/*.tsx'"
+    "format": "prettier --write 'packages/**/*.tsx'",
+    "start": "cd packages/client && npm run start"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
