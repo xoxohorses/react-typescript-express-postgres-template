@@ -3,8 +3,15 @@
   "version": "0.0.1",
   "description": "A team based drawing game that combines elements of mad libs and one word story.",
   "main": "index.js",
-  "private": true,
-  "scripts": {},
   "author": "xoxohorses",
-  "license": "ISC"
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.0.1"
+  }
 }
