@@ -2,9 +2,23 @@
   "name": "drawing-game",
   "version": "0.0.1",
   "description": "A team based drawing game that combines elements of mad libs and one word story.",
-  "main": "index.js",
-  "private": true,
-  "scripts": {},
   "author": "xoxohorses",
-  "license": "ISC"
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint 'packages/**/*.tsx'",
+    "format": "prettier --write 'packages/**/*.tsx'",
+    "start": "cd packages/client && npm run start"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
 }
