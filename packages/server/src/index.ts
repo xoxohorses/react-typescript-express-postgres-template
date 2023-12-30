@@ -1,6 +1,7 @@
 import cors from "cors";
 import express from "express";
-import { sharedFunction } from "packages/shared/src/utils";
+
+import { sharedFunction } from "../../shared/src/utils.js";
 
 const app = express();
 const port = 3001;
