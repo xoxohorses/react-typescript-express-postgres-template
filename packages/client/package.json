@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.0.1",
-  "description": "",
   "scripts": {
     "start": "webpack serve --open"
   },
