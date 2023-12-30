@@ -2,7 +2,6 @@
   "name": "drawing-game",
   "version": "0.0.1",
   "description": "A team based drawing game that combines elements of mad libs and one word story.",
-  "main": "index.js",
   "author": "xoxohorses",
   "license": "ISC",
   "private": true,
