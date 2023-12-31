@@ -9,6 +9,7 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "docker compose up",
     "client": "cd packages/client && npm run start",
     "server": "cd packages/server && npm run start",
     "lint": "eslint 'packages/**/*.ts' 'packages/**/*.tsx'",

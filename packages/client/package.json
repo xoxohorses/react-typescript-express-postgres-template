@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "webpack serve --open"
+    "start": "npx webpack serve --open"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",

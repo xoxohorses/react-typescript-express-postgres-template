@@ -1,3 +1,13 @@
 services:
   client:
-  server:
+    image: react-template/client
+    container_name: client
+    build:
+      context: .
+      dockerfile: ./packages/client/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./packages/client:/app/packages/client
+      - ./packages/shared:/app/packages/shared
+      - ./node_modules:/app/node_modules
