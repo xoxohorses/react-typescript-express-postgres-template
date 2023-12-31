@@ -1,7 +1,11 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import path from "path";
+import { fileURLToPath } from "url";
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
   mode: "development",
   module: {
     rules: [
