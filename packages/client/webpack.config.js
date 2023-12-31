@@ -34,4 +34,10 @@ export default {
       template: path.join(__dirname, "public", "index.html"),
     }),
   ],
+  // Reduce noisy webpack log outputs
+  stats: {
+    assets: false,
+    modules: false,
+    chunks: false,
+  },
 };
