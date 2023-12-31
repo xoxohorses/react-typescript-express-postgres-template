@@ -11,3 +11,15 @@ services:
       - ./packages/client:/app/packages/client
       - ./packages/shared:/app/packages/shared
       - ./node_modules:/app/node_modules
+  server:
+    image: react-template/server
+    container_name: server
+    build:
+      context: .
+      dockerfile: ./packages/server/Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./packages/server:/app/packages/server
+      - ./packages/shared:/app/packages/shared
+      - ./node_modules:/app/node_modules
