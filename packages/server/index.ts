@@ -1,7 +1,7 @@
 import cors from "cors";
 import express from "express";
 
-import { sharedFunction } from "../shared/src/utils.js";
+import { sharedFunction } from "../shared/utils.js";
 import { getUsers } from "./routes/user.js";
 
 const app = express();
