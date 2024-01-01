@@ -36,6 +36,7 @@
 </details>
 
 ## Introduction
+<img src="https://github.com/xoxohorses/react-typescript-express-postgres-template/assets/69382434/8a58103f-a2a9-4e07-bede-cf0e65c78d16"/>
 
 **Code more, configure less:** This template lays the foundation for local development, so you can focus on project implementation.
 
@@ -50,7 +51,8 @@
 |  |  |  index.html
 |  |  /src
 |  |  |  App.tsx
-|  |  index.tsx
+|  |  |  index.tsx
+|  |  |  styles.css
 |  |  Dockerfile
 |  |  package.json
 |  |  .babelrc
