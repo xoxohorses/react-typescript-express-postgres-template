@@ -14,9 +14,13 @@ export default {
         use: "babel-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"], // Add these loaders
+      },
     ],
   },
-  entry: path.join(__dirname, "index.tsx"),
+  entry: path.join(__dirname, "src", "index.tsx"),
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
