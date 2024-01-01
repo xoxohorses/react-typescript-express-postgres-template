@@ -3,6 +3,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Display",
+    "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 * {
