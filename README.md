@@ -16,69 +16,26 @@
     <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E"/>
 </div>
 <br/>
-<details>
-  <summary><b>Table of Contents</b></summary>
-  <ol>
-    <li>
-      <a href="#introduction">Introduction</a>
-    </li>
-    <li>
-      <a href="#get-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#notes">Notes</a>
-    </li>
-  </ol>
-</details>
+<ol>
+<li>
+  <a href="#introduction">Introduction</a>
+</li>
+<li>
+  <a href="#get-started">Get Started</a>
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#installation">Installation</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#notes">Notes</a>
+</li>
+</ol>
 
 ## Introduction
 <img src="https://github.com/xoxohorses/react-typescript-express-postgres-template/assets/69382434/8a58103f-a2a9-4e07-bede-cf0e65c78d16"/>
 
 **Code more, configure less:** This template lays the foundation for local development, so you can focus on project implementation.
-
-<details>
-  <summary><i>Project structure</i></summary>
-
-```
-/node_modules
-/packages
-|  /client
-|  |  /public
-|  |  |  index.html
-|  |  /src
-|  |  |  App.tsx
-|  |  |  index.tsx
-|  |  |  styles.css
-|  |  Dockerfile
-|  |  package.json
-|  |  .babelrc
-|  |  webpack.config.js
-|  /server
-|  |  /db
-|  |  |  index.js
-|  |  |  init.sql
-|  |  /routes
-|  |  |  user.ts
-|  |  index.ts
-|  |  Dockerfile
-|  |  package.json
-|  /shared
-|  |  utils.ts
-|  |  package.json
-.eslintrc.js
-.gitignore
-.prettierrc.js
-docker-compose.yml
-package-lock.json
-package.json
-tsconfig.json
-```
-
-</details>
 
 ## Get started
 
@@ -122,6 +79,42 @@ Install the following on your machine:
 4. Code!
 
 ## Notes
+
+**Project structure**
+```
+/node_modules
+/packages
+|  /client
+|  |  /public
+|  |  |  index.html
+|  |  /src
+|  |  |  App.tsx
+|  |  |  index.tsx
+|  |  |  styles.css
+|  |  Dockerfile
+|  |  package.json
+|  |  .babelrc
+|  |  webpack.config.js
+|  /server
+|  |  /db
+|  |  |  index.js
+|  |  |  init.sql
+|  |  /routes
+|  |  |  user.ts
+|  |  index.ts
+|  |  Dockerfile
+|  |  package.json
+|  /shared
+|  |  utils.ts
+|  |  package.json
+.eslintrc.js
+.gitignore
+.prettierrc.js
+docker-compose.yml
+package-lock.json
+package.json
+tsconfig.json
+```
 
 **package.json**
 
