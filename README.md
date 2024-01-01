@@ -1,14 +1,17 @@
 <a name="readme-top"></a>
 
-# React, TypeScript, Node, PostgreSQL, Docker Project Template
+# React, TypeScript, Express, PostgreSQL, Docker Project Template
 
 <div align="center">
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-    <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white"/>
     <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
     <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
     <br/>
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+    <img src="https://img.shields.io/badge/ts--node-3178C6?style=for-the-badge&logo=ts-node&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=white"/>
     <img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white"/>
     <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E"/>
 </div>
@@ -26,10 +29,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#notes">Notes</a>
-      <ul>
-        <li><a href="#package.json">package.json</a></li>
-      </ul>
+    <li>
+      <a href="#notes">Notes</a>
     </li>
   </ol>
 </details>
@@ -120,6 +121,6 @@ Install the following on your machine:
 
 ## Notes
 
-### package.json
+**package.json**
 
 There is one root `package.json` with shared dependencies and one `package.json` per service (client, server) with service specific dependencies. By specifying [`"workspaces"`](https://docs.npmjs.com/cli/v8/using-npm/workspaces) in the root `package.json`, we simplify the workflow for managing and installing dependencies in a monorepo. Just run `npm i` once!
