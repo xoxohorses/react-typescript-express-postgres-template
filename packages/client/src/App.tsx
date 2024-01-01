@@ -1,6 +1,6 @@
 import React from "react";
 
-import { sharedFunction } from "../../shared/src/utils";
+import { sharedFunction } from "../../shared/utils";
 
 const App = () => {
   sharedFunction();

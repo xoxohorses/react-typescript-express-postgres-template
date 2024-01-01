@@ -1,35 +1,46 @@
+version: "1.0"
+
 services:
   client:
     image: react-template/client
     container_name: client
+    restart: always
     build:
       context: .
       dockerfile: ./packages/client/Dockerfile
     ports:
       - "3000:3000"
+    networks:
+      - app
     volumes:
       - ./packages/client:/app/packages/client
       - ./packages/shared:/app/packages/shared
       - ./node_modules:/app/node_modules
+
   server:
     image: react-template/server
     container_name: server
+    restart: always
     build:
       context: .
       dockerfile: ./packages/server/Dockerfile
     ports:
       - "3001:3001"
+    networks:
+      - app
+      - db
     volumes:
       - ./packages/server:/app/packages/server
       - ./packages/shared:/app/packages/shared
       - ./node_modules:/app/node_modules
     environment:
-      DB_NAME: test
-      DB_USER: root
+      DB_NAME: demo
+      DB_USER: admin
       DB_PASSWORD: password
       # A host on the docker adapter that allows server to connect with db container
       # https://stackoverflow.com/questions/33357567/econnrefused-for-postgres-on-nodejs-with-dockers
       DB_HOST: host.docker.internal
+
   db:
     image: postgres:14-alpine
     container_name: db
@@ -37,8 +48,14 @@ services:
     ports:
       - 5432:5432
     command: postgres -c max_connections=200
+    networks:
+      - db
     volumes:
       - ./packages/server/db/init.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
-      POSTGRES_USER: root
+      POSTGRES_USER: admin
       POSTGRES_PASSWORD: password
+
+networks:
+  app:
+  db:
