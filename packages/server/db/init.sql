@@ -1,6 +1,6 @@
-CREATE DATABASE test;
+CREATE DATABASE demo;
 
-\c test;
+\c demo;
 
 CREATE TABLE IF NOT EXISTS "users" (
     id VARCHAR PRIMARY KEY,
