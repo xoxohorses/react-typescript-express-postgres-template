@@ -16,7 +16,7 @@ export default {
       },
     ],
   },
-  entry: path.join(__dirname, "src", "index.tsx"),
+  entry: path.join(__dirname, "index.tsx"),
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
