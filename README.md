@@ -119,3 +119,7 @@ tsconfig.json
 **package.json**
 
 There is one root `package.json` with shared dependencies and one `package.json` per service (client, server) with service specific dependencies. By specifying [`"workspaces"`](https://docs.npmjs.com/cli/v8/using-npm/workspaces) in the root `package.json`, we simplify the workflow for managing and installing dependencies in a monorepo. Just run `npm i` once!
+
+**docker-compose.yml**
+
+DO NOT commit the env variables in your docker-compose.yml to GitHub. Instead, store it in a `.env` file and manually deploy it to your server, or use the secret manager in your cloud provider. They currently live there as a starting point.
