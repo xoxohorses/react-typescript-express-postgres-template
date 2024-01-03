@@ -41,8 +41,6 @@
 
 ### Prerequisites
 
-Install the following on your machine:
-
 - Node: [Download](https://nodejs.org/en/download) or
   ```
   brew install node@18
@@ -122,4 +120,4 @@ There is one root `package.json` with shared dependencies and one `package.json`
 
 **docker-compose.yml**
 
-DO NOT commit the env variables in your docker-compose.yml to GitHub. Instead, store it in a `.env` file and manually deploy it to your server, or use the secret manager in your cloud provider. They currently live there as a starting point.
+DO NOT commit real env variables in your `docker-compose.yml` to GitHub. Instead, store it in a `.env` file and manually deploy it to your server, or use the secret manager in your cloud provider. The env variables currently live in docker compose only as a starting point.
