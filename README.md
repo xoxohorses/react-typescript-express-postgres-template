@@ -98,6 +98,7 @@
 |  |  |  index.js
 |  |  |  init.sql
 |  |  /routes
+|  |  |  index.ts
 |  |  |  user.ts
 |  |  index.ts
 |  |  Dockerfile
