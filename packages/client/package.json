@@ -4,7 +4,8 @@
   "type": "module",
   "main": "./index.tsx",
   "scripts": {
-    "start": "npx webpack serve --open"
+    "start": "npx webpack serve --open",
+    "build": "npx webpack --mode development"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
