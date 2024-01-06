@@ -16,7 +16,7 @@ export default {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"], // Add these loaders
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
