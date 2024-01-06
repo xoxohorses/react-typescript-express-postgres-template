@@ -115,10 +115,11 @@ package.json
 tsconfig.json
 ```
 
-**package.json**
-
+#### package.json
 There is one root `package.json` with shared dependencies and one `package.json` per service (client, server) with service specific dependencies. By specifying [`"workspaces"`](https://docs.npmjs.com/cli/v8/using-npm/workspaces) in the root `package.json`, we simplify the workflow for managing and installing dependencies in a monorepo. Just run `npm i` once!
 
-**docker-compose.yml**
-
+#### docker-compose.yml
 DO NOT commit real env variables in your `docker-compose.yml` to GitHub. Instead, store it in a `.env` file and manually deploy it to your server, or use the secret manager in your cloud provider. The env variables currently live in docker compose only as a starting point.
+
+#### Dockerfile
+As I am building an app using this template, I've encountered this seemingly unresolvable type error `TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /app/packages/server/index.ts`. Changing the base docker image from `node:18-alpine` -> `node:16-alpine` was the only action that resolved the type error.
