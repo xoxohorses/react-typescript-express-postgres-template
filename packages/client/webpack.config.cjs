@@ -1,17 +1,23 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import path from "path";
-import { fileURLToPath } from "url";
+/* eslint-disable @typescript-eslint/no-var-requires */
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-export default {
+module.exports = {
   mode: "development",
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: "babel-loader",
+        use: [
+          {
+            loader: "ts-loader",
+            options: {
+              compilerOptions: {
+                noEmit: false,
+              },
+            },
+          },
+        ],
         exclude: /node_modules/,
       },
       {
@@ -20,7 +26,7 @@ export default {
       },
     ],
   },
-  entry: path.join(__dirname, "src", "index.tsx"),
+  entry: path.resolve(__dirname, "src", "index.tsx"),
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
@@ -29,13 +35,13 @@ export default {
     filename: "bundle.js",
   },
   devServer: {
-    static: { directory: path.join(__dirname, "public") },
+    static: { directory: path.resolve(__dirname, "public") },
     compress: true,
     port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "public", "index.html"),
+      template: path.resolve(__dirname, "public", "index.html"),
     }),
   ],
   // Reduce noisy webpack log outputs
