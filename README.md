@@ -93,8 +93,9 @@
 |  |  |  styles.css
 |  |  Dockerfile
 |  |  package.json
-|  |  .babelrc
-|  |  webpack.config.js
+|  |  postcss.config.cjs
+|  |  tailwind.config.cjs
+|  |  webpack.config.cjs
 |  /server
 |  |  /db
 |  |  |  index.js
