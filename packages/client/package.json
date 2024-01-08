@@ -4,8 +4,8 @@
   "type": "module",
   "main": "./index.tsx",
   "scripts": {
-    "start": "npx webpack serve --open",
-    "build": "npx webpack --mode development"
+    "start": "npx webpack serve --open --mode development",
+    "build": "npx webpack --mode production"
   },
   "devDependencies": {
     "@types/react": "^18.2.46",
