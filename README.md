@@ -63,19 +63,13 @@
    git clone git@github.com:xoxohorses/react-typescript-node-postgres-template.git
    ```
 
-2. Navigate to project directory and install dependencies
+2. Navigate to project directory and start the project on http://localhost:3000
 
    ```
-   cd react-typescript-node-postgres-template && npm i
+   cd react-typescript-node-postgres-template && npm start
    ```
 
-3. Start the project on http://localhost:3000
-
-   ```
-   npm start
-   ```
-
-4. Code!
+3. Start coding!
 
 ## Notes
 
