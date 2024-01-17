@@ -14,6 +14,7 @@
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
     <img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white"/>
     <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E"/>
+    <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"/>
 </div>
 <br/>
 <ol>
@@ -36,7 +37,7 @@
 
 <img src="https://github.com/xoxohorses/react-typescript-express-postgres-template/assets/69382434/8a58103f-a2a9-4e07-bede-cf0e65c78d16"/>
 
-**Code more, configure less:** This template lays the foundation for local development, so you can focus on project implementation.
+**Code more, configure less:** This template lays the foundation for local development from containerization to test setup, so you can dive right in.
 
 ## Get started
 
@@ -102,10 +103,12 @@
 |  |  package.json
 |  /shared
 |  |  utils.ts
+|  |  utils.test.ts
 |  |  package.json
 .eslintrc.js
 .gitignore
 .prettierrc.js
+jest.config.js
 docker-compose.yml
 package-lock.json
 package.json
