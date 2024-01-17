@@ -19,7 +19,7 @@ app.use(express.json({ type: "application/json" }));
 app.use("/api", apiRouter);
 
 app.get("/", async (req, res) => {
-  sharedFunction();
+  sharedFunction("server");
   res.send("Express server working!");
 });
 
