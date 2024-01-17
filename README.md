@@ -123,6 +123,7 @@ There is one root `package.json` with shared dependencies and one `package.json`
 - `npm run lint`: Catch any code style errors
 - `npm run format`: Format your code
 - `npm test`: Run tests
+- `npm run typecheck`: Catch any typescript errors
 
 #### docker-compose.yml
 
