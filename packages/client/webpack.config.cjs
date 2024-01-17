@@ -4,6 +4,21 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
+  entry: path.resolve(__dirname, "src", "index.tsx"),
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    // https://stackoverflow.com/a/57715005
+    publicPath: "/",
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  devServer: {
+    static: { directory: path.resolve(__dirname, "public") },
+    compress: true,
+    port: 3000,
+  },
   module: {
     rules: [
       {
@@ -31,19 +46,6 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
-  },
-  entry: path.resolve(__dirname, "src", "index.tsx"),
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"],
-  },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-  },
-  devServer: {
-    static: { directory: path.resolve(__dirname, "public") },
-    compress: true,
-    port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({
