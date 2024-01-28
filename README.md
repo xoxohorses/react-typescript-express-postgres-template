@@ -132,11 +132,3 @@ DO NOT commit real env variables in your `docker-compose.yml` to GitHub. Instead
 #### Dockerfile
 
 As I am building an app using this template, I've encountered this seemingly unresolvable type error `TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /app/packages/server/index.ts`. Changing the base docker image from `node:18-alpine` -> `node:16-alpine` was the only action that resolved the type error.
-
-#### Have feedback?
-
-Open an issue or PR and I will do my best to address.
-
-#### Find this useful and feeling generous?
-
-<a href="https://www.buymeacoffee.com/xoxohorses">☕️ Buy me a coffee</a>
